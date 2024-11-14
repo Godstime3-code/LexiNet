@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Godstime Pious" />
+    <meta
+      name="keywords"
+      content="Dictionary, synonyms, antonymns, word, meaning, vocabulary"
+    />
+    <meta
+      name="description"
+      content="A simple Online Dictionary Web Application"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary Application</title>
+
+    <link
+      rel="shortcut icon"
+      href="./asset/images/logo-1ad79f67.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./asset/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-header">
+        <div class="brand">
+          <img src="./asset/images/logo-1ad79f67.svg" alt="" />
+        </div>
+        <div class="header-util">
+          <div class="font-tab">
+            <span>Mono</span>
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 10 16"
+              class="transition-all rotate-180 text-dark-400"
+              height="20"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="app-theme">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              class="text-black text-dark-400 js-toggle-btn"
+              height="20"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-search">
+        <div class="app-content">
+          <input
+            type="text"
+            class="search-input js-search-input"
+            placeholder="Search for any word..."
+          />
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="search-icon js-search-icon"
+            height="30"
+            width="30"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+      </div>
+
+      <div class="app-main">
+        <div class="empty-feed">
+          <div class="app-empty-feed">
+            <div style="width: 300px; height: 250px">
+              <img
+                class="empty-feed-image"
+                src="./asset/images/empty-feed-svg.svg"
+                alt="Picture"
+              />
+            </div>
+            <div>
+              <h2 class="empty-feed-title">Online Dictionary</h2>
+              <p class="empty-feed-text">
+                Hi there, search any word to find the nouns, verbs, synonyms,
+                meanings and much more.😊
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="font-type">
+        <ul>
+          <li class="font">Serif</li>
+          <li class="font">San Serif</li>
+          <li class="font">Mono</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./asset/script/app.js"></script>
+  </body>
+</html>
