@@ -174,7 +174,7 @@ ul li {
   border-radius: 10px;
   padding: 1rem;
   transition: all 0.15s ease-in;
-  opacity: 0;
+  display: none;
 }
 
 .font-type ul li {
@@ -193,5 +193,5 @@ ul li {
 }
 
 .font-type-style {
-  opacity: 1;
+  display: block;
 }
