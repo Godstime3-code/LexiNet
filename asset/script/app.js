@@ -146,6 +146,18 @@ function renderTerm(term) {
 
     document.querySelector(".app-main").innerHTML = html1;
     document.querySelector(".app-main").innerHTML += html2;
+    document.querySelector(".btn-term-sound").addEventListener("click", () => {
+      const audioEl = document.createElement("audio");
+      console.log(data.phonetics);
+
+      if (data.phonetics[0].audio === "") {
+        audioEl.src = data.phonetics[2].audio;
+      } else {
+        audioEl.src = data.phonetics[0].audio;
+      }
+
+      audioEl.play();
+    });
   }
 }
 async function fetchAndRenderTerm() {
